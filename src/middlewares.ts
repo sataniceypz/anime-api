@@ -74,7 +74,8 @@ export function setupMiddleware(app: Elysia) {
               name: "amvstrm",
               url: "https://github.com/sataniceypz",
               email: "sataniceypz@gmail.com",
-            },   
+            },
+          },
           tags: [
             {
               name: "v1",
@@ -92,9 +93,9 @@ export function setupMiddleware(app: Elysia) {
           spec: {
             url: "/swagger/json",
           },
-          theme: "deepSpace"
+          theme: "deepSpace",
         },
-      )
+      })
     )
     .use(
       rateLimit({
@@ -144,4 +145,4 @@ export function setupMiddleware(app: Elysia) {
     .use(Logestic.preset("fancy"))
     .use(HttpStatusCode())
     .onError(errorHandler);
-}
+          }
