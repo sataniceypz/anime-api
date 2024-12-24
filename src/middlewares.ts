@@ -69,22 +69,12 @@ export function setupMiddleware(app: Elysia) {
             title: "amvstrm's API",
             description:
               "amvstrm's API is a collection of APIs that provide data from various sources. Please noted that this API is still in beta that missing some of the routes, functions and may be subject to change in the future.",
-            termsOfService: "https://docs.amvstr.me/docs/api/usage",
             version: "3.0.0 Beta",
             contact: {
               name: "amvstrm",
-              url: "https://amvstr.me",
-              email: "amvstrmkh@gmail.com",
-            },
-            license: {
-              name: "GPL-3.0",
-              url: "https://github.com/amvstrm/api/blob/master/LICENSE",
-            },
-          },
-          externalDocs: {
-            url: "https://docs.amvstr.me/docs/api/usage",
-            description: "API Documentation",
-          },
+              url: "https://github.com/sataniceypz",
+              email: "sataniceypz@gmail.com",
+            },   
           tags: [
             {
               name: "v1",
@@ -104,7 +94,7 @@ export function setupMiddleware(app: Elysia) {
           },
           theme: "deepSpace"
         },
-      })
+      )
     )
     .use(
       rateLimit({
